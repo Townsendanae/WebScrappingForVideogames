@@ -1,16 +1,16 @@
-## Plantilla base de scraping en Eneba
-
 require 'open-uri' # consultar a la plataforma
 require 'nokogiri' # formatear, parsear a html. importando libreria
 require 'csv' # escribir y leer csv
 
 
 ruta = "archivos/"
-nombreArchivo = "EnebaJuegosEconomicos.csv"
+nombreArchivo = "EnebaRecomendados.csv"
 
-#Plantilla de acuerdo a link
-linkPlantilla = 'https://www.eneba.com/latam/store'
+#20 primero recomendados ENEBA.
 
+linkRecomendacionesEneba = 'https://www.eneba.com/latam/store/all?page=1&sortBy=POPULARITY_DESC'
+
+# abrir el link
 pagina = URI.open(linkRecomendacionesEneba)
 
 CSV.open(ruta+nombreArchivo, 'w') do |csv|
