@@ -1,12 +1,14 @@
 <div class="row">
     <div class="col-md-6 col-lg-3" *ngFor='let blogcard of blogcards'>
         <div class="card">
-            <img [src]=blogcard.image alt="blogs" class="card-img-top">
+            <img [src]=blogcard.pictureLink alt="blogs" class="card-img-top" width="300" height="150">
             <div class="card-body">
                 <h4 class="card-title">{{blogcard.title}}</h4>
-                <h6 class="card-subtitle">{{blogcard.subtitle}}</h6>
-                <p class="mt-3">{{blogcard.subtext}}</p>
-                <button type="button" class="btn btn-primary">Read More</button>
+                <h6 class="card-subtitle">Tienda: {{blogcard.shopName}}</h6>
+                <h6 class="card-subtitle">Precio: ${{blogcard.price}}</h6>
+                <a href={{blogcard.linkToShop}}>
+                    <button type="button" class="btn btn-primary">Ir al sitio</button>
+                  </a>
             </div>
         </div>
     </div>
