@@ -12,6 +12,7 @@ busqueda = "Recomendados"
 link = 'https://www.eneba.com/latam/store/all?page=1&sortBy=POPULARITY_DESC'
 
 dictionary = {}
+dictionary[:tienda] = ["Eneba","https://1000marcas.net/wp-content/uploads/2021/06/Eneba-logo.png"]
 dictionary[:search] = busqueda
 results = []
 
@@ -34,16 +35,16 @@ contenedor.each do |box|
   price = priceBox.css('.DTv7Ag').css('.L5ErLT').inner_text
 
   dicTemporary = {}
-
   dicTemporary[:title] = title.to_s
-  dicTemporary[:price] = price.to_s 
+  dicTemporary[:price] = price.to_s.gsub(",", ".") 
+  dicTemporary[:discount] = ""
   dicTemporary[:pictureLink] = pictureLink.to_s
   dicTemporary[:linkToShop] = link.to_s
-
+  dicTemporary[:shopName] = "Ebena"
   results.push(dicTemporary)
   
-  CSV.open(ruta+nombreArchivo + ".csv", 'a') do |csv|
-    csv << [title.to_s, price.to_s, pictureLink.to_s,link.to_s] 
+  CSV.open(ruta+nombreArchivo+".csv", 'a') do |csv|
+    csv << [title.to_s, price.to_s.gsub(",", "."), "", pictureLink.to_s, link.to_s, "Ebena"] 
   end
 end
 
