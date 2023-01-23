@@ -118,3 +118,48 @@ Topbar Responsive
     position: fixed;
   }
 }
+
+element.style {
+}
+#navbar.nav-flex #nav-belt #nav-search .nav-searchbar, #navbar.nav-flex #nav-belt #nav-search .nav-searchbar .nav-fill, #navbar.nav-flex #nav-belt #nav-search .nav-searchbar .nav-search-field {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    position: static;
+    float: none;
+    -webkit-box: 1;
+    -moz-box: 1;
+    -webkit-flex: 1 1 0px;
+    -ms-flex: 1 1 0px;
+    flex: 1 1 0px;
+}
+#nav-search .nav-searchbar {
+    display: block;
+    position: relative;
+    height: 40px;
+    margin-bottom: 0;
+    -webkit-border-radius: 4px 4px 4px 4px;
+    -moz-border-radius: 4px 4px 4px 4px;
+    border-radius: 4px 4px 4px 4px;
+    border-radius: 0\9;
+}
+#navbar * {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+form {
+    margin-bottom: 14px;
+}
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+user agent stylesheet
+form {
+    display: block;
+    margin-top: 0em;
+}
