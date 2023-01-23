@@ -16,7 +16,7 @@ contenedor.css('.search_result_row').each do |game|
         name = game.css('.responsive_search_name_combined').css('.col.search_name.ellipsis').css('.title').inner_text.strip
         price = game.css('.responsive_search_name_combined').css('.col.search_price').inner_text.strip
         linkToShop = game.attr('href')
-        if !price.empty?
+        if !price.empty? && price == 'Free to Play'
             csv << [name, price, img, linkToShop]
         end
     end

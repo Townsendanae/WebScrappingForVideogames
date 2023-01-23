@@ -10,14 +10,15 @@ rutaJSON = "./json/"
 ##Obtener Info
 enebaTitle, enebaPrice ,enebaDiscount, enebaPicture, enebaShop, isStoreEneba = getInfoByShop("Eneba","EnebaEconomicos")
 gogTitle, gogPrice ,gogDiscount, gogPicture, gogShop, isStoreGog = getInfoByShop("GOG","GOGJuegosGratis")
+steamTitle, steamPrice ,steamDiscount, steamPicture, steamShop, isStoreSteam = getInfoByShop("Steam","steamGamesTopSellers")
 
-titles = np.array(enebaTitle + gogTitle)
-prices = np.array(enebaPrice + gogPrice)
-discounts = np.array(enebaDiscount + gogDiscount)
-picturesLinks = np.array(enebaPicture + gogPicture)
-toShops = np.array(enebaShop + gogShop)
-shopName = np.array(isStoreEneba + isStoreGog)
-
+titles = np.array(enebaTitle + gogTitle + steamTitle)
+prices = np.array(enebaPrice + gogPrice + steamPrice)
+discounts = np.array(enebaDiscount + gogDiscount + steamDiscount)
+picturesLinks = np.array(enebaPicture + gogPicture + steamPicture)
+toShops = np.array(enebaShop + gogShop + steamShop)
+shopName = np.array(isStoreEneba + isStoreGog + isStoreSteam)
+print(titles.size, prices.size, discounts.size, picturesLinks.size, toShops.size, shopName.size)
 ##Por ser juegos gratis o economicos, se realiza un shuffle y se seleccionan los primeros 20. 
 finalRange = titles.size - 1
 randomIndex = np.array(rd.sample(range(0, finalRange), 15))
@@ -32,7 +33,7 @@ shopNameToShow = shopName[randomIndex]
 
 ##To dictionary
 information = {}
-information["tienda"] = ["Eneba", "GOG"]
+information["tienda"] = ["Eneba", "GOG", "Steam"]
 information["search"] = "Economicos"
 results = []
 

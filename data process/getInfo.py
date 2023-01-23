@@ -29,4 +29,23 @@ def getInfoByShop(ShopName, fileName):
                 lstPictureLink.append(picture.strip())
                 lstLinkToShop.append(link.strip())
                 lstStore.append("Gog")
+    if ShopName == "Steam":
+        with open ("./archivos/"+fileName+".csv", encoding="utf-8") as file:
+            file.readline()
+            for line in file:
+                name,price,imgLink, linkToShop = line.split(",")
+                lista = price.split("$")
+                lstTitle.append(name.strip())
+                if len(lista) == 2:
+                    lstPrice.append(lista[1].strip())
+                    lstDiscount.append('0')
+                elif len(lista) == 3:
+                    lstPrice.append(lista[1].strip())
+                    lstDiscount.append(lista[2].strip())
+                else:
+                    lstPrice.append(lista[0].strip())
+                    lstDiscount.append('0')
+                lstPictureLink.append(imgLink.strip())
+                lstLinkToShop.append(linkToShop.strip())
+                lstStore.append("Steam")
     return lstTitle, lstPrice ,lstDiscount, lstPictureLink, lstLinkToShop, lstStore
