@@ -1,18 +1,21 @@
 <div class="row">
-    <div class="col-md-6 col-lg-3" *ngFor='let blogcard of blogcards'>
-        <div class="card">
-            <img [src]=blogcard.pictureLink alt="blogs" class="card-img-top" width="300" height="150">
-            <div class="card-body">
-                <h4 class="card-title">{{blogcard.title}}</h4>
-                <h6 class="card-subtitle">Tienda: {{blogcard.shopName}}</h6>
-                <h6 *ngIf="blogcard.price != 0; else free;" class="card-subtitle">Precio: ${{blogcard.price}}</h6>
-                <ng-template #free>
-                    <h6 class="card-subtitle">Precio: Gratis</h6>
-                </ng-template>
-                <a href={{blogcard.linkToShop}}>
-                    <button type="button" class="btn btn-primary">Ir al sitio</button>
-                  </a>
-            </div>
-        </div>
+  <div class="col-md-6 col-lg-3" *ngFor="let blogcard of blogcards">
+    <div class="card">
+      <img
+        [src]="blogcard.pictureLink"
+        alt="blogs"
+        class="card-img-top"
+        width="300"
+        height="150"
+      />
+      <div class="card-body">
+        <h4 class="card-title">{{ blogcard.title }}</h4>
+        <h6 class="card-subtitle">Tienda: {{ blogcard.shopName }}</h6>
+        <h6 class="card-subtitle">Precio: ${{ blogcard.price }}</h6>
+        <a href="{{ blogcard.linkToShop }}">
+          <button type="button" class="btn btn-primary">Ir al sitio</button>
+        </a>
+      </div>
     </div>
+  </div>
 </div>

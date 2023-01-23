@@ -1,26 +1,27 @@
-import { Component } from '@angular/core';
-import {NgbNavChangeEvent} from '@ng-bootstrap/ng-bootstrap';
-
+import { Component, OnInit } from "@angular/core";
+import { NgbNavChangeEvent } from "@ng-bootstrap/ng-bootstrap";
+import { blogcard, blogcards } from "../alert/blog-cards-data";
 
 @Component({
-  selector: 'app-ngbd-nav',
-  templateUrl: './nav.component.html'
+  selector: "app-ngbd-nav",
+  templateUrl: "./nav.component.html",
 })
-export class NgbdnavBasicComponent {
-  currentJustify = 'start';
+export class NgbdnavBasicComponent implements OnInit {
+  blogcards: blogcard[];
 
-  active=1;
-  activev= "top";
+  currentJustify = "start";
 
-  activeKeep=1;
+  active = 1;
+  activev = "top";
 
-  activeSelected=1;
+  activeKeep = 1;
+
+  activeSelected = 1;
   disabled = true;
 
-  
   tabs = [1, 2, 3, 4, 5];
   counter = this.tabs.length + 1;
-  activeDynamic=1;
+  activeDynamic = 1;
 
   onNavChange(changeEvent: NgbNavChangeEvent) {
     if (changeEvent.nextId === 3) {
@@ -35,9 +36,8 @@ export class NgbdnavBasicComponent {
     }
   }
 
-
   close(event: MouseEvent, toRemove: number) {
-    this.tabs = this.tabs.filter(id => id !== toRemove);
+    this.tabs = this.tabs.filter((id) => id !== toRemove);
     event.preventDefault();
     event.stopImmediatePropagation();
   }
@@ -46,4 +46,10 @@ export class NgbdnavBasicComponent {
     this.tabs.push(this.counter++);
     event.preventDefault();
   }
+
+  constructor() {
+    this.blogcards = blogcards;
+  }
+
+  ngOnInit(): void {}
 }

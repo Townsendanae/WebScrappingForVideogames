@@ -1,89 +1,75 @@
-import { debounceTime } from 'rxjs/operators';
-import { Input, Component, OnInit } from '@angular/core';
-import { Subject } from 'rxjs';
+import { Component, OnInit } from "@angular/core";
+import { NgbNavChangeEvent } from "@ng-bootstrap/ng-bootstrap";
+import { blogcard, blogcards } from "./blog-cards-data";
 
 @Component({
-  selector: 'app-ngbd-alert',
-  templateUrl: 'alert.component.html',
-  styles: [`
-    .alert-custom {
-      color: #cc4dd5;
-      background-color: #f0c4f3;
-      border-color: #f0c4f3;
-    }
-  `]
+  selector: "app-ngbd-alert",
+  templateUrl: "alert.component.html",
+  styles: [
+    `
+      .alert-custom {
+        color: #cc4dd5;
+        background-color: #f0c4f3;
+        border-color: #f0c4f3;
+      }
+    `,
+  ],
 })
 export class NgbdAlertBasicComponent implements OnInit {
-  // this is for the Closeable Alert
-  @Input() public alerts: Array<IAlert> = [];
+  blogcards: blogcard[];
+  enebaShop: blogcard[] = [];
+  gogShop: blogcard[] = [];
 
-  private backup: Array<IAlert>;
+  currentJustify = "start";
+
+  active = 1;
+  activev = "top";
+
+  activeKeep = 1;
+
+  activeSelected = 1;
+  disabled = true;
+
+  tabs = [1, 2, 3, 4, 5];
+  counter = this.tabs.length + 1;
+  activeDynamic = 1;
+
+  onNavChange(changeEvent: NgbNavChangeEvent) {
+    if (changeEvent.nextId === 3) {
+      changeEvent.preventDefault();
+    }
+  }
+
+  toggleDisabled() {
+    this.disabled = !this.disabled;
+    if (this.disabled) {
+      this.activeSelected = 1;
+    }
+  }
+
+  close(event: MouseEvent, toRemove: number) {
+    this.tabs = this.tabs.filter((id) => id !== toRemove);
+    event.preventDefault();
+    event.stopImmediatePropagation();
+  }
+
+  add(event: MouseEvent) {
+    this.tabs.push(this.counter++);
+    event.preventDefault();
+  }
+
   constructor() {
-    this.alerts.push(
-      {
-        id: 1,
-        type: 'primary',
-        message: 'This is a primary alert'
-      },
-      {
-        id: 2,
-        type: 'info',
-        message: 'This is an info alert'
-      },
-      {
-        id: 3,
-        type: 'success',
-        message: 'This is an success alert',
-      },
-      {
-        id: 4,
-        type: 'warning',
-        message: 'This is a warning alert'
-      },
-      {
-        id: 5,
-        type: 'danger',
-        message: 'This is a danger alert'
-      },
-      {
-        id: 6,
-        type: 'secondary',
-        message: 'This is an secondary alert'
-      },
-    );
-    this.backup = this.alerts.map((alert: IAlert) => Object.assign({}, alert));
+    this.blogcards = blogcards;
+
+    for (let juego of this.blogcards) {
+      if (juego.shopName == "Ebena") {
+        this.enebaShop.push(juego);
+      }
+      if (juego.shopName == "Gog") {
+        this.gogShop.push(juego);
+      }
+    }
   }
 
-  // End the Closeable Alert
-  // This is for the self closing alert
-  private _success = new Subject<string>();
-
-  staticAlertClosed = false;
-  successMessage: string | null = null;
-
-  public closeAlert(alert: IAlert) {
-    const index: number = this.alerts.indexOf(alert);
-    this.alerts.splice(index, 1);
-  }
-
-  public reset() {
-    this.alerts = this.backup.map((alert: IAlert) => Object.assign({}, alert));
-  }
-
-  ngOnInit(): void {
-    setTimeout(() => (this.staticAlertClosed = true), 20000);
-
-    this._success.subscribe(message => (this.successMessage = message));
-    this._success.pipe(debounceTime(5000)).subscribe(() => (this.successMessage = null));
-  }
-
-  public changeSuccessMessage() {
-    this._success.next(`${new Date()} - Message successfully changed.`);
-  }
-}
-
-export interface IAlert {
-  id: number;
-  type: string;
-  message: string;
+  ngOnInit(): void {}
 }
