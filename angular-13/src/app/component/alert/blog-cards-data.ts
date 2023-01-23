@@ -21,35 +21,19 @@ export interface blogcard {
 
 export const blogcards: blogcard[] = [
     {
-        "title": "Heavenly Heroes of Antidomi UNRATED",
+        "title": "Vagrus - The Riven Realms: Vorax",
         "price": "0.00",
         "discount": "0",
-        "pictureLink": "https://images.gog-statics.com/6bdba080e0d01f61b80627a918ed43e7a3c9d9a2998a9d4524fd1f290e3ef1da_product_tile_extended_432x243.webp",
-        "linkToShop": "https://www.gog.com/en/game/heavenly_heroes_of_antidomi_unrated",
+        "pictureLink": "https://media.kasperskydaily.com/wp-content/uploads/sites/92/2020/02/17105257/game-ratings-featured.jpg",
+        "linkToShop": "https://www.gog.com/en/game/vagrus_the_riven_realms_vorax",
         "shopName": "Gog"
     },
     {
-        "title": "Way of the Hunter - Free UTV DLC",
+        "title": "Sherlock Holmes Chapter One - Clergyman Cassock",
         "price": "0.00",
         "discount": "0",
-        "pictureLink": "https://images.gog-statics.com/82fae0323f0798d17e66ae06b8fb5d92ed5654d50fb27e152f4438801eb4575b_product_tile_extended_432x243.webp",
-        "linkToShop": "https://www.gog.com/en/game/way_of_the_hunter_free_utv_dlc",
-        "shopName": "Gog"
-    },
-    {
-        "title": "UnMetal (PC) Steam Key GLOBAL",
-        "price": "0.99",
-        "discount": "\"\"",
-        "pictureLink": "https://cdn-products.eneba.com/resized-products/x146Fa46daXngCPgUtx_-RaFuhzWoMtTlVt44xbuhpI_350x200_1x-0.jpeg",
-        "linkToShop": "https://www.eneba.com/latam/steam-unmetal-pc-steam-key-global",
-        "shopName": "Ebena"
-    },
-    {
-        "title": "Tunguska The Visitation - Ghost of Valentin",
-        "price": "0.00",
-        "discount": "0",
-        "pictureLink": "https://images.gog-statics.com/2ead5c184228f5249c85bb9bc42c4ca800a32df87b62b4ae2e6ab2497e942315_product_tile_extended_432x243.webp",
-        "linkToShop": "https://www.gog.com/en/game/tunguska_the_visitation_ghost_of_valentin",
+        "pictureLink": "https://media.kasperskydaily.com/wp-content/uploads/sites/92/2020/02/17105257/game-ratings-featured.jpg",
+        "linkToShop": "https://www.gog.com/en/game/sherlock_holmes_chapter_one_clergyman_cassock",
         "shopName": "Gog"
     },
     {
@@ -61,60 +45,28 @@ export const blogcards: blogcard[] = [
         "shopName": "Ebena"
     },
     {
-        "title": "Nyasha (PC) Steam Key GLOBAL",
-        "price": "0.49",
-        "discount": "\"\"",
-        "pictureLink": "https://cdn-products.eneba.com/resized-products/Xizsm1WUfFgOwyGeVeLJYRnxRJT5Gte3r1hRjj4-I5E_350x200_1x-0.jpg",
-        "linkToShop": "https://www.eneba.com/latam/steam-nyasha-pc-steam-key-global",
-        "shopName": "Ebena"
-    },
-    {
-        "title": "X-COM: Complete Pack (PC) Steam Key GLOBAL",
-        "price": "0.28",
-        "discount": "\"\"",
-        "pictureLink": "https://cdn-products.eneba.com/resized-products/W3Dltbe_350x200_1x-0.jpg",
-        "linkToShop": "https://www.eneba.com/latam/steam-x-com-complete-pack-pc-steam-key-global",
-        "shopName": "Ebena"
-    },
-    {
-        "title": "Destroy All Humans! Clone Carnage",
+        "title": "Fall of Porcupine: Prologue",
         "price": "0.00",
         "discount": "0",
         "pictureLink": "https://media.kasperskydaily.com/wp-content/uploads/sites/92/2020/02/17105257/game-ratings-featured.jpg",
-        "linkToShop": "https://www.gog.com/en/game/destroy_all_humans_clone_carnage",
+        "linkToShop": "https://www.gog.com/en/game/fall_of_porcupine_prologue",
         "shopName": "Gog"
     },
     {
-        "title": "Neverout Steam Key GLOBAL",
-        "price": "0.40",
-        "discount": "\"\"",
-        "pictureLink": "https://cdn-products.eneba.com/resized-products/JyZE3g-MTqAG4geh_D6Qxf_W4CFdQ64pjg7TOSiLcyw_350x200_1x-0.jpeg",
-        "linkToShop": "https://www.eneba.com/latam/steam-neverout-steam-key-global",
-        "shopName": "Ebena"
-    },
-    {
-        "title": "Sherlock Holmes Chapter One - Clergyman Cassock",
+        "title": "Heavenly Heroes of Antidomi UNRATED",
         "price": "0.00",
         "discount": "0",
-        "pictureLink": "https://media.kasperskydaily.com/wp-content/uploads/sites/92/2020/02/17105257/game-ratings-featured.jpg",
-        "linkToShop": "https://www.gog.com/en/game/sherlock_holmes_chapter_one_clergyman_cassock",
+        "pictureLink": "https://images.gog-statics.com/6bdba080e0d01f61b80627a918ed43e7a3c9d9a2998a9d4524fd1f290e3ef1da_product_tile_extended_432x243.webp",
+        "linkToShop": "https://www.gog.com/en/game/heavenly_heroes_of_antidomi_unrated",
         "shopName": "Gog"
     },
     {
-        "title": "The Evil Within 2 (PC) Gog.com  Key GLOBAL",
-        "price": "0.37",
-        "discount": "\"\"",
-        "pictureLink": "https://cdn-products.eneba.com/resized-products/z9ooqscxnvftgbpktcgt_350x200_1x-0.jpg",
-        "linkToShop": "https://www.eneba.com/latam/gog-the-evil-within-2-pc-gog-com-key-global",
-        "shopName": "Ebena"
-    },
-    {
-        "title": "LEGO: Batman 2 - DC Super Heroes Steam Key GLOBAL",
-        "price": "0.95",
-        "discount": "\"\"",
-        "pictureLink": "https://cdn-products.eneba.com/resized-products/5WFo3QeDVAV1Tvgt-0EMoEhlQkDe5elKlWFspehsKTI_350x200_1x-0.jpeg",
-        "linkToShop": "https://www.eneba.com/latam/steam-lego-batman-2-dc-super-heroes-steam-key-global",
-        "shopName": "Ebena"
+        "title": "War Thunder",
+        "price": "Free to Play",
+        "discount": "0",
+        "pictureLink": "https://cdn.akamai.steamstatic.com/steam/apps/236390/capsule_sm_120.jpg?t=1671733778",
+        "linkToShop": "https://store.steampowered.com/app/236390/War_Thunder/?snr=1_7_7_7000_150_1",
+        "shopName": "Steam"
     },
     {
         "title": "Resident Evil: Revelations 2 Episode One: Penal Colony Steam Key GLOBAL",
@@ -125,19 +77,67 @@ export const blogcards: blogcard[] = [
         "shopName": "Ebena"
     },
     {
-        "title": "Gamedec - Definitive Edition - Free Characters Bundle",
+        "title": "Prison Architect - Free For Life",
         "price": "0.00",
         "discount": "0",
         "pictureLink": "https://media.kasperskydaily.com/wp-content/uploads/sites/92/2020/02/17105257/game-ratings-featured.jpg",
-        "linkToShop": "https://www.gog.com/en/game/gamedec_definitive_edition_free_characters_bundle",
+        "linkToShop": "https://www.gog.com/en/game/prison_architect_free_for_life",
         "shopName": "Gog"
     },
     {
-        "title": "Omno Steam Key GLOBAL",
-        "price": "0.80",
+        "title": "Fabled Lands Demo",
+        "price": "0.00",
+        "discount": "0",
+        "pictureLink": "https://media.kasperskydaily.com/wp-content/uploads/sites/92/2020/02/17105257/game-ratings-featured.jpg",
+        "linkToShop": "https://www.gog.com/en/game/fabled_lands_demo",
+        "shopName": "Gog"
+    },
+    {
+        "title": "Chernobylite Short Story: The Arrival",
+        "price": "0.00",
+        "discount": "0",
+        "pictureLink": "https://media.kasperskydaily.com/wp-content/uploads/sites/92/2020/02/17105257/game-ratings-featured.jpg",
+        "linkToShop": "https://www.gog.com/en/game/chernobylite_short_story_the_arrival",
+        "shopName": "Gog"
+    },
+    {
+        "title": "LEGO: Batman 2 - DC Super Heroes Steam Key GLOBAL",
+        "price": "0.95",
         "discount": "\"\"",
-        "pictureLink": "https://cdn-products.eneba.com/resized-products/N2jRIUAOmxMjqS2_FFxXeCdicRmLeoWZAC-aHB_POW8_350x200_1x-0.jpeg",
-        "linkToShop": "https://www.eneba.com/latam/steam-omno-steam-key-global",
+        "pictureLink": "https://cdn-products.eneba.com/resized-products/5WFo3QeDVAV1Tvgt-0EMoEhlQkDe5elKlWFspehsKTI_350x200_1x-0.jpeg",
+        "linkToShop": "https://www.eneba.com/latam/steam-lego-batman-2-dc-super-heroes-steam-key-global",
+        "shopName": "Ebena"
+    },
+    {
+        "title": "Synergia Steam Key GLOBAL",
+        "price": "0.74",
+        "discount": "\"\"",
+        "pictureLink": "https://cdn-products.eneba.com/resized-products/nLFWZp0Bfsyun1pCeFN5xONClGhH-SNlpSOv_btLnug_350x200_1x-0.jpeg",
+        "linkToShop": "https://www.eneba.com/latam/steam-synergia-steam-key-global",
+        "shopName": "Ebena"
+    },
+    {
+        "title": "Castaway of the Ardusta Sea UNRATED",
+        "price": "0.00",
+        "discount": "0",
+        "pictureLink": "https://media.kasperskydaily.com/wp-content/uploads/sites/92/2020/02/17105257/game-ratings-featured.jpg",
+        "linkToShop": "https://www.gog.com/en/game/castaway_of_the_ardusta_sea_unrated",
+        "shopName": "Gog"
+    },
+    {
+        "title": "Chromosome Evil - New Weapon & Weapons Customization",
+        "price": "0.00",
+        "discount": "0",
+        "pictureLink": "https://media.kasperskydaily.com/wp-content/uploads/sites/92/2020/02/17105257/game-ratings-featured.jpg",
+        "linkToShop": "https://www.gog.com/en/game/chromosome_evil_new_weapon_weapons_customization",
+        "shopName": "Gog"
+    },
+    {
+        "title": "Nyasha (PC) Steam Key GLOBAL",
+        "price": "0.49",
+        "discount": "\"\"",
+        "pictureLink": "https://cdn-products.eneba.com/resized-products/Xizsm1WUfFgOwyGeVeLJYRnxRJT5Gte3r1hRjj4-I5E_350x200_1x-0.jpg",
+        "linkToShop": "https://www.eneba.com/latam/steam-nyasha-pc-steam-key-global",
         "shopName": "Ebena"
     }
-] 
+]

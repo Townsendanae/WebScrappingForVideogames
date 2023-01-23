@@ -19,6 +19,7 @@ export class NgbdAlertBasicComponent implements OnInit {
   blogcards: blogcard[];
   enebaShop: blogcard[] = [];
   gogShop: blogcard[] = [];
+  steamShop: blogcard[] = [];
 
   currentJustify = "start";
 
@@ -67,6 +68,9 @@ export class NgbdAlertBasicComponent implements OnInit {
       }
       if (juego.shopName == "Gog") {
         this.gogShop.push(juego);
+      }
+      if (juego.shopName == "Steam") {
+        this.steamShop.push(juego);
       }
     }
   }

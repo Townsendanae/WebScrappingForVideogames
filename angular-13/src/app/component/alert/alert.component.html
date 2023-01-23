@@ -79,20 +79,33 @@
           <li [ngbNavItem]="3">
             <a ngbNavLink>Steam</a>
             <ng-template ngbNavContent>
-              <p>
-                Sed commodo, leo at suscipit dictum, quam est porttitor sapien,
-                eget sodales nibh elit id diam. Nulla facilisi. Donec egestas
-                ligula vitae odio interdum aliquet. Duis lectus turpis, luctus
-                eget tincidunt eu, congue et odio. Duis pharetra et nisl at
-                faucibus. Quisque luctus pulvinar arcu, et molestie lectus
-                ultrices et. Sed diam urna, egestas ut ipsum vel, volutpat
-                volutpat neque. Praesent fringilla tortor arcu. Vivamus faucibus
-                nisl enim, nec tristique ipsum euismod facilisis. Morbi ut
-                bibendum est, eu tincidunt odio. Orci varius natoque penatibus
-                et magnis dis parturient montes, nascetur ridiculus mus. Mauris
-                aliquet odio ac lorem aliquet ultricies in eget neque. Phasellus
-                nec tortor vel tellus pulvinar feugiat.
-              </p>
+              <div class="row">
+                <div class="col-md-6 col-lg-3" *ngFor="let blogcard of steamShop">
+                  <div class="card">
+                    <img
+                      [src]="blogcard.pictureLink"
+                      alt="blogs"
+                      class="card-img-top"
+                      width="300"
+                      height="150"
+                    />
+                    <div class="card-body">
+                      <h4 class="card-title">{{ blogcard.title }}</h4>
+                      <h6 class="card-subtitle">
+                        Tienda: {{ blogcard.shopName }}
+                      </h6>
+                      <h6 class="card-subtitle">
+                        Precio: ${{ blogcard.price }}
+                      </h6>
+                      <a href="{{ blogcard.linkToShop }}">
+                        <button type="button" class="btn btn-primary">
+                          Ir al sitio
+                        </button>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </ng-template>
           </li>
         </ul>
