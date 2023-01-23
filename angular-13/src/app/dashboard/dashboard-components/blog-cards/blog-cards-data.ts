@@ -42,7 +42,7 @@ export const blogcards: blogcard[] = [
         "discount": "\"\"",
         "pictureLink": "https://cdn-products.eneba.com/resized-products/x146Fa46daXngCPgUtx_-RaFuhzWoMtTlVt44xbuhpI_350x200_1x-0.jpeg",
         "linkToShop": "https://www.eneba.com/latam/steam-unmetal-pc-steam-key-global",
-        "shopName": "Ebena"
+        "shopName": "Eneba"
     },
     {
         "title": "Tunguska The Visitation - Ghost of Valentin",
@@ -58,7 +58,7 @@ export const blogcards: blogcard[] = [
         "discount": "\"\"",
         "pictureLink": "https://cdn-products.eneba.com/resized-products/yI0jC9r3kGXeq5J111F4Lal7vbskMW7snSG1YJ_OBPM_350x200_1x-0.jpeg",
         "linkToShop": "https://www.eneba.com/latam/steam-street-football-steam-key-global",
-        "shopName": "Ebena"
+        "shopName": "Eneba"
     },
     {
         "title": "Nyasha (PC) Steam Key GLOBAL",
@@ -66,7 +66,7 @@ export const blogcards: blogcard[] = [
         "discount": "\"\"",
         "pictureLink": "https://cdn-products.eneba.com/resized-products/Xizsm1WUfFgOwyGeVeLJYRnxRJT5Gte3r1hRjj4-I5E_350x200_1x-0.jpg",
         "linkToShop": "https://www.eneba.com/latam/steam-nyasha-pc-steam-key-global",
-        "shopName": "Ebena"
+        "shopName": "Eneba"
     },
     {
         "title": "X-COM: Complete Pack (PC) Steam Key GLOBAL",
@@ -74,7 +74,7 @@ export const blogcards: blogcard[] = [
         "discount": "\"\"",
         "pictureLink": "https://cdn-products.eneba.com/resized-products/W3Dltbe_350x200_1x-0.jpg",
         "linkToShop": "https://www.eneba.com/latam/steam-x-com-complete-pack-pc-steam-key-global",
-        "shopName": "Ebena"
+        "shopName": "Eneba"
     },
     {
         "title": "Destroy All Humans! Clone Carnage",
@@ -90,7 +90,7 @@ export const blogcards: blogcard[] = [
         "discount": "\"\"",
         "pictureLink": "https://cdn-products.eneba.com/resized-products/JyZE3g-MTqAG4geh_D6Qxf_W4CFdQ64pjg7TOSiLcyw_350x200_1x-0.jpeg",
         "linkToShop": "https://www.eneba.com/latam/steam-neverout-steam-key-global",
-        "shopName": "Ebena"
+        "shopName": "Eneba"
     },
     {
         "title": "Sherlock Holmes Chapter One - Clergyman Cassock",
@@ -106,7 +106,7 @@ export const blogcards: blogcard[] = [
         "discount": "\"\"",
         "pictureLink": "https://cdn-products.eneba.com/resized-products/z9ooqscxnvftgbpktcgt_350x200_1x-0.jpg",
         "linkToShop": "https://www.eneba.com/latam/gog-the-evil-within-2-pc-gog-com-key-global",
-        "shopName": "Ebena"
+        "shopName": "Eneba"
     },
     {
         "title": "LEGO: Batman 2 - DC Super Heroes Steam Key GLOBAL",
@@ -114,7 +114,7 @@ export const blogcards: blogcard[] = [
         "discount": "\"\"",
         "pictureLink": "https://cdn-products.eneba.com/resized-products/5WFo3QeDVAV1Tvgt-0EMoEhlQkDe5elKlWFspehsKTI_350x200_1x-0.jpeg",
         "linkToShop": "https://www.eneba.com/latam/steam-lego-batman-2-dc-super-heroes-steam-key-global",
-        "shopName": "Ebena"
+        "shopName": "Eneba"
     },
     {
         "title": "Resident Evil: Revelations 2 Episode One: Penal Colony Steam Key GLOBAL",
@@ -122,7 +122,7 @@ export const blogcards: blogcard[] = [
         "discount": "\"\"",
         "pictureLink": "https://cdn-products.eneba.com/resized-products/w3o6CROMZAMVe-1t9H6s_imiOyD7Ip_ouZZoZm2rAp4_350x200_1x-0.jpeg",
         "linkToShop": "https://www.eneba.com/latam/steam-resident-evil-revelations-2-episode-one-penal-colony-steam-key-global",
-        "shopName": "Ebena"
+        "shopName": "Eneba"
     },
     {
         "title": "Gamedec - Definitive Edition - Free Characters Bundle",
@@ -138,6 +138,6 @@ export const blogcards: blogcard[] = [
         "discount": "\"\"",
         "pictureLink": "https://cdn-products.eneba.com/resized-products/N2jRIUAOmxMjqS2_FFxXeCdicRmLeoWZAC-aHB_POW8_350x200_1x-0.jpeg",
         "linkToShop": "https://www.eneba.com/latam/steam-omno-steam-key-global",
-        "shopName": "Ebena"
+        "shopName": "Eneba"
     }
 ] 

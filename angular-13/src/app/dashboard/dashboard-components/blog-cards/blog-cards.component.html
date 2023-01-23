@@ -5,7 +5,10 @@
             <div class="card-body">
                 <h4 class="card-title">{{blogcard.title}}</h4>
                 <h6 class="card-subtitle">Tienda: {{blogcard.shopName}}</h6>
-                <h6 class="card-subtitle">Precio: ${{blogcard.price}}</h6>
+                <h6 *ngIf="blogcard.price != 0; else free;" class="card-subtitle">Precio: ${{blogcard.price}}</h6>
+                <ng-template #free>
+                    <h6 class="card-subtitle">Precio: Gratis</h6>
+                </ng-template>
                 <a href={{blogcard.linkToShop}}>
                     <button type="button" class="btn btn-primary">Ir al sitio</button>
                   </a>
