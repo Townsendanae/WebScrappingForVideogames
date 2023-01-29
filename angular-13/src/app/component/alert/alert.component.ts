@@ -61,19 +61,56 @@ export class NgbdAlertBasicComponent implements OnInit {
 
   constructor() {
     this.blogcards = blogcards;
-
-    for (let juego of this.blogcards) {
-      if (juego.shopName == "Ebena") {
-        this.enebaShop.push(juego);
-      }
-      if (juego.shopName == "Gog") {
-        this.gogShop.push(juego);
-      }
-      if (juego.shopName == "Steam") {
-        this.steamShop.push(juego);
-      }
-    }
   }
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    let datosArray;
+
+    fetch('http://localhost:3000/totalJuegosEconomicos.json')
+    .then(response => response.json())
+    .then(data => {
+        datosArray = data['result'];
+
+        for (let juego of datosArray) {
+          if (juego.shopName == "Ebena") {
+            this.enebaShop.push(juego);
+          }
+          if (juego.shopName == "Gog") {
+            this.gogShop.push(juego);
+          }
+          if (juego.shopName == "Steam") {
+            this.steamShop.push(juego);
+          }
+        }
+
+        this.blogcards += datosArray;
+
+    })
+    .catch(error => console.error(error));
+
+    fetch('http://localhost:3000/totalJuegosTopSellers.json')
+    .then(response => response.json())
+    .then(data => {
+        datosArray = data['result'];
+
+        for (let juego of datosArray) {
+          if (juego.shopName == "Ebena") {
+            this.enebaShop.push(juego);
+          }
+          if (juego.shopName == "Gog") {
+            this.gogShop.push(juego);
+          }
+          if (juego.shopName == "Steam") {
+            this.steamShop.push(juego);
+          }
+        }
+        
+        this.blogcards += datosArray;
+    })
+    .catch(error => console.error(error));
+    
+
+    
+
+  }
 }

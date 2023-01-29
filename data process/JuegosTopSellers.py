@@ -3,27 +3,18 @@ import numpy as np
 import random as rd
 import json
 
-#JuegosEconomicosEneba, juegosGratisGOG 
-nombreArchivoJson = "GameSearch"
+nombreArchivoJson = "totalJuegosTopSellers"
 rutaJSON = "./json/"
-tiendas = ["Eneba"]
-
-#SolicitarDatos
-juego = "minecraft"
 
 ##Obtener Info
-enebaTitle, enebaPrice ,enebaDiscount, enebaPicture, enebaShop, isStoreEneba = getInfoByShop("Eneba","Eneba_"+juego)
-# gogTitle, gogPrice ,gogDiscount, gogPicture, gogShop, isStoreGog = getInfoByShop("GOG","GOG_"+juego)
-# steamTitle, steamPrice ,steamDiscount, steamPicture, steamShop, steamStoreGog = steamInfoByShop("Steam","Steam_"+juego)
+steamTitle, steamPrice ,steamDiscount, steamPicture, steamShop, isStoreSteam = getInfoByShop("Steam","steamGamesSingleplayer")
 
-titles = np.array(enebaTitle)
-prices = np.array(enebaPrice )
-discounts = np.array(enebaDiscount)
-picturesLinks = np.array(enebaPicture)
-toShops = np.array(enebaShop)
-shopName = np.array(isStoreEneba)
-
-
+titles = np.array(steamTitle)
+prices = np.array(steamPrice)
+discounts = np.array(steamDiscount)
+picturesLinks = np.array(steamPicture)
+toShops = np.array(steamShop)
+shopName = np.array(isStoreSteam)
 ##Por ser juegos gratis o economicos, se realiza un shuffle y se seleccionan los primeros 20. 
 finalRange = titles.size - 1
 randomIndex = np.array(rd.sample(range(0, finalRange), 15))
@@ -38,8 +29,8 @@ shopNameToShow = shopName[randomIndex]
 
 ##To dictionary
 information = {}
-information["tienda"] = tiendas
-information["search"] = juego
+information["tienda"] = ["Steam"]
+information["search"] = "Economicos"
 results = []
 
 for indexGame in range(len(titlesToShow)):
@@ -55,11 +46,13 @@ for indexGame in range(len(titlesToShow)):
 information["result"] = results
 
 ##To JSON
-with open(rutaJSON+nombreArchivoJson+"_"+juego+'.json', 'w') as json_file:
+with open(rutaJSON+nombreArchivoJson+'.json', 'w') as json_file:
     json.dump(information, json_file)
 
-
 from toServer import *
+
+
+
 
 
 

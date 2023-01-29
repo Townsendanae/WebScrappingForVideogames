@@ -12,5 +12,15 @@ export class BlogCardsComponent implements OnInit {
     this.blogcards = blogcards;
   }
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    let datosArray;
+
+    fetch('http://localhost:3000/totalJuegosEconomicos.json')
+    .then(response => response.json())
+    .then(data => {
+        datosArray = data['result'];
+        this.blogcards = datosArray;
+    })
+    .catch(error => console.error(error));
+  }
 }
