@@ -2,10 +2,7 @@ require 'open-uri' # consultar a la plataforma
 require 'nokogiri' # formatear, parsear a html. importando libreria
 require 'csv' # escribir y leer csv
 
-ruta = "archivos/"
-rutaJSON = "json/"
-nombreArchivo = "EnebaEconomicos"
-busqueda = "Economicos"
+
 link = 'https://www.eneba.com/latam/store/games-under-1?page=1&rangeTo=1&regions[]=global&types[]=game'
 
 
@@ -41,13 +38,13 @@ end
 require 'json'
 serverFile = File.read('./backend/db.json')
 data_hash = JSON.parse(serverFile)
-arreglo_DBresult = data_hash['totalJuegosEconomicos.json']['result'].concat(results)
+arreglo_DBresult = data_hash['totalJuegos']['result'].concat(results)
 set = Set.new(arreglo_DBresult.uniq)
-data_hash['totalJuegosEconomicos.json']['result'] = set.to_a.uniq
+data_hash['totalJuegos']['result'] = set.to_a.uniq
 
 
 data_json = JSON.generate(data_hash)
-File.open('./backend/db.json', 'w') do |f|
+File.open('././backend/db.json', 'w') do |f|
   f.write(data_json)
 end
 

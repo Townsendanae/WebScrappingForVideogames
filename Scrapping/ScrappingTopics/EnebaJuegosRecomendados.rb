@@ -2,26 +2,11 @@ require 'open-uri' # consultar a la plataforma
 require 'nokogiri' # formatear, parsear a html. importando libreria
 require 'csv' # escribir y leer csv
 
-#20 primero recomendados ENEBA.
-
-ruta = "archivos/"
-rutaJSON = "json/"
-nombreArchivo = "EnebaRecomendados"
-busqueda = "Recomendados"
-
 link = 'https://www.eneba.com/latam/store/all?page=1&sortBy=POPULARITY_DESC'
-
-dictionary = {}
-dictionary[:tienda] = ["Eneba","https://1000marcas.net/wp-content/uploads/2021/06/Eneba-logo.png"]
-dictionary[:search] = busqueda
 results = []
 
 # abrir el link
 pagina = URI.open(link)
-
-CSV.open(ruta+nombreArchivo + ".csv", 'w') do |csv|
-    csv << ["title", "price", "picture link", "link to shop"] 
-  end
 
 contenido_parseado = Nokogiri::HTML(pagina.read)
 contenedor = contenido_parseado.css('.JZCH_t').css('.pFaGHa')
@@ -31,26 +16,32 @@ contenedor.each do |box|
   titleBox = box.css('.tUUnLz')
   title = titleBox.css('.x4MuJo').css('.lirayz').inner_text
   priceBox = box.css('.b3POZC').css('a')
-  link = "https://www.eneba.com/" + priceBox.attr("href").inner_text
+  link = "https://www.eneba.com" + priceBox.attr("href").inner_text
   price = priceBox.css('.DTv7Ag').css('.L5ErLT').inner_text
+  price = 'Not available' if price == ''
 
   dicTemporary = {}
   dicTemporary[:title] = title.to_s
   dicTemporary[:price] = price.to_s.gsub(",", ".") 
-  dicTemporary[:discount] = ""
+  dicTemporary[:discount] = "Not apply"
   dicTemporary[:pictureLink] = pictureLink.to_s
   dicTemporary[:linkToShop] = link.to_s
-  dicTemporary[:shopName] = "Ebena"
+  dicTemporary[:shopName] = "Eneba"
   results.push(dicTemporary)
   
-  CSV.open(ruta+nombreArchivo+".csv", 'a') do |csv|
-    csv << [title.to_s, price.to_s.gsub(",", "."), "", pictureLink.to_s, link.to_s, "Ebena"] 
-  end
 end
 
 
-dictionary[:results] = results
-
+#Colocar en la base de datos
 require 'json'
-json = dictionary.to_json
-File.write(rutaJSON + nombreArchivo+'.json', json)
+serverFile = File.read('./backend/db.json')
+data_hash = JSON.parse(serverFile)
+arreglo_DBresult = data_hash['totalJuegos']['result'].concat(results)
+set = Set.new(arreglo_DBresult.uniq)
+data_hash['totalJuegos']['result'] = set.to_a.uniq
+
+
+data_json = JSON.generate(data_hash)
+File.open('././backend/db.json', 'w') do |f|
+  f.write(data_json)
+end

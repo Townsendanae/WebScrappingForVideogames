@@ -2,9 +2,6 @@ require 'nokogiri'
 require 'open-uri'
 require 'csv'
 
-ruta = 'archivos/'
-rutaJSON = "json/"
-nombreArchivo = 'GOGJuegosGratis.csv'
 
 url = 'https://www.gog.com/en/games?priceRange=0,0'
 
@@ -46,7 +43,6 @@ page
   if image == '' || image == nil
     image = 'https://media.kasperskydaily.com/wp-content/uploads/sites/92/2020/02/17105257/game-ratings-featured.jpg'
   end
-  CSV.open(ruta + nombreArchivo, 'a') { |csv| csv << [name, price, discount, image, link] }
 
 
   dicTemporary = {}
@@ -64,13 +60,13 @@ end
 require 'json'
 serverFile = File.read('./backend/db.json')
 data_hash = JSON.parse(serverFile)
-arreglo_DBresult = data_hash['totalJuegosEconomicos.json']['result'].concat(results)
+arreglo_DBresult = data_hash['totalJuegos']['result'].concat(results)
 set = Set.new(arreglo_DBresult.uniq)
-data_hash['totalJuegosEconomicos.json']['result'] = set.to_a.uniq
+data_hash['totalJuegos']['result'] = set.to_a.uniq
 
 
 data_json = JSON.generate(data_hash)
-File.open('./backend/db.json', 'w') do |f|
+File.open('././backend/db.json', 'w') do |f|
   f.write(data_json)
 end
 
