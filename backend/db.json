@@ -680,5 +680,14 @@
                 "shopName": "Steam"
             }
         ]
+    },
+    "totalJuegos.json": {
+        "tienda": [
+            "Eneba",
+            "GOG",
+            "Steam"
+        ],
+        "search": "todos",
+        "result": []
     }
 }
