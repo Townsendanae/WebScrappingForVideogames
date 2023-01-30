@@ -9,17 +9,10 @@ busqueda = "Economicos"
 link = 'https://www.eneba.com/latam/store/games-under-1?page=1&rangeTo=1&regions[]=global&types[]=game'
 
 
-dictionary = {}
-dictionary[:tienda] = ["Eneba","https://1000marcas.net/wp-content/uploads/2021/06/Eneba-logo.png"]
-dictionary[:search] = busqueda
 results = []
 
 # abrir el link
 pagina = URI.open(link)
-
-CSV.open(ruta+nombreArchivo + ".csv", 'w') do |csv|
-    csv << ["title", "price", "picture link", "link to shop"] 
-  end
 
 contenido_parseado = Nokogiri::HTML(pagina.read)
 contenedor = contenido_parseado.css('.JZCH_t').css('.pFaGHa')
@@ -31,6 +24,7 @@ contenedor.each do |box|
   priceBox = box.css('.b3POZC').css('a')
   link = "https://www.eneba.com" + priceBox.attr("href").inner_text
   price = priceBox.css('.DTv7Ag').css('.L5ErLT').inner_text
+  price = 'Free to Play' if price == '0.00 €'
 
   dicTemporary = {}
   dicTemporary[:title] = title.to_s
@@ -38,16 +32,22 @@ contenedor.each do |box|
   dicTemporary[:discount] = ""
   dicTemporary[:pictureLink] = pictureLink.to_s
   dicTemporary[:linkToShop] = link.to_s
-  dicTemporary[:shopName] = "Ebena"
+  dicTemporary[:shopName] = "Eneba"
   results.push(dicTemporary)
-  
-  CSV.open(ruta+nombreArchivo +".csv", 'a') do |csv|
-    csv << [title.to_s, price.to_s.gsub(",", "."), "", pictureLink.to_s, link.to_s, "Ebena"] 
-  end
 end
 
-dictionary[:results] = results
 
+#Colocar en la base de datos
 require 'json'
-json = dictionary.to_json
-File.write(rutaJSON + nombreArchivo+'.json', json)
+serverFile = File.read('./backend/db.json')
+data_hash = JSON.parse(serverFile)
+arreglo_DBresult = data_hash['totalJuegosEconomicos.json']['result'].concat(results)
+set = Set.new(arreglo_DBresult.uniq)
+data_hash['totalJuegosEconomicos.json']['result'] = set.to_a.uniq
+
+
+data_json = JSON.generate(data_hash)
+File.open('./backend/db.json', 'w') do |f|
+  f.write(data_json)
+end
+

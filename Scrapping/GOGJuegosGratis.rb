@@ -3,6 +3,7 @@ require 'open-uri'
 require 'csv'
 
 ruta = 'archivos/'
+rutaJSON = "json/"
 nombreArchivo = 'GOGJuegosGratis.csv'
 
 url = 'https://www.gog.com/en/games?priceRange=0,0'
@@ -11,7 +12,9 @@ pagina = URI.open(url)
 datos = pagina.read
 page = Nokogiri.HTML(datos)
 
-CSV.open(ruta + nombreArchivo, 'w') { |csv| csv << %w[Name Price Discount Image Link] }
+
+results = []
+
 
 page
   .css('.product-tile.product-tile--grid')
@@ -34,7 +37,7 @@ page
     .css('price-discount')
     .text
   discount = '0%' if discount == ''
-  price = '$0.00' if price == ''
+  price = 'Free to Play' if price == ''
   image = game
           .css('.product-tile__image-wrapper')
           .css('picture')
@@ -44,4 +47,31 @@ page
     image = 'https://media.kasperskydaily.com/wp-content/uploads/sites/92/2020/02/17105257/game-ratings-featured.jpg'
   end
   CSV.open(ruta + nombreArchivo, 'a') { |csv| csv << [name, price, discount, image, link] }
+
+
+  dicTemporary = {}
+  dicTemporary[:title] = name.to_s
+  dicTemporary[:price] = price
+  dicTemporary[:discount] = discount
+  dicTemporary[:pictureLink] = image
+  dicTemporary[:linkToShop] = link
+  dicTemporary[:shopName] = "Gog"
+  results.push(dicTemporary)
+
 end
+
+#Colocar en la base de datos
+require 'json'
+serverFile = File.read('./backend/db.json')
+data_hash = JSON.parse(serverFile)
+arreglo_DBresult = data_hash['totalJuegosEconomicos.json']['result'].concat(results)
+set = Set.new(arreglo_DBresult.uniq)
+data_hash['totalJuegosEconomicos.json']['result'] = set.to_a.uniq
+
+
+data_json = JSON.generate(data_hash)
+File.open('./backend/db.json', 'w') do |f|
+  f.write(data_json)
+end
+
+

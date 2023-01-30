@@ -8,123 +8,547 @@
         "search": "Economicos",
         "result": [
             {
-                "title": "Sherlock Holmes Chapter One - Clergyman Cassock",
-                "price": "0.00",
-                "discount": "0",
-                "pictureLink": "https://media.kasperskydaily.com/wp-content/uploads/sites/92/2020/02/17105257/game-ratings-featured.jpg",
-                "linkToShop": "https://www.gog.com/en/game/sherlock_holmes_chapter_one_clergyman_cassock",
-                "shopName": "Gog"
+                "title": "The Evil Within 2 (PC) Gog.com  Key GLOBAL",
+                "price": "0.25 €",
+                "discount": "",
+                "pictureLink": "https://cdn-products.eneba.com/resized-products/z9ooqscxnvftgbpktcgt_350x200_1x-0.jpg",
+                "linkToShop": "https://www.eneba.com/latam/gog-the-evil-within-2-pc-gog-com-key-global",
+                "shopName": "Eneba"
+            },
+            {
+                "title": "Dishonored 2 (PC) Gog.com Key GLOBAL",
+                "price": "0.27 €",
+                "discount": "",
+                "pictureLink": "https://cdn-products.eneba.com/resized-products/kbsmbhubsgur5enf1qpu_350x200_1x-0.jpg",
+                "linkToShop": "https://www.eneba.com/latam/gog-dishonored-2-pc-gog-com-key-global",
+                "shopName": "Eneba"
+            },
+            {
+                "title": "Resident Evil: Revelations 2 Episode One: Penal Colony Steam Key GLOBAL",
+                "price": "0.37 €",
+                "discount": "",
+                "pictureLink": "https://cdn-products.eneba.com/resized-products/w3o6CROMZAMVe-1t9H6s_imiOyD7Ip_ouZZoZm2rAp4_350x200_1x-0.jpeg",
+                "linkToShop": "https://www.eneba.com/latam/steam-resident-evil-revelations-2-episode-one-penal-colony-steam-key-global",
+                "shopName": "Eneba"
+            },
+            {
+                "title": "UnMetal (PC) Steam Key GLOBAL",
+                "price": "0.89 €",
+                "discount": "",
+                "pictureLink": "https://cdn-products.eneba.com/resized-products/x146Fa46daXngCPgUtx_-RaFuhzWoMtTlVt44xbuhpI_350x200_1x-0.jpeg",
+                "linkToShop": "https://www.eneba.com/latam/steam-unmetal-pc-steam-key-global",
+                "shopName": "Eneba"
+            },
+            {
+                "title": "Nyasha (PC) Steam Key GLOBAL",
+                "price": "0.49 €",
+                "discount": "",
+                "pictureLink": "https://cdn-products.eneba.com/resized-products/Xizsm1WUfFgOwyGeVeLJYRnxRJT5Gte3r1hRjj4-I5E_350x200_1x-0.jpg",
+                "linkToShop": "https://www.eneba.com/latam/steam-nyasha-pc-steam-key-global",
+                "shopName": "Eneba"
             },
             {
                 "title": "Blade Assault Steam Key GLOBAL",
-                "price": "0.37",
-                "discount": "\"\"",
+                "price": "0.32 €",
+                "discount": "",
                 "pictureLink": "https://cdn-products.eneba.com/resized-products/5nsDlcj9WYJj6UIjk9jCTox6rAJjV7FnSJSuqyzQ8jI_350x200_1x-0.jpeg",
                 "linkToShop": "https://www.eneba.com/latam/steam-blade-assault-steam-key-global",
-                "shopName": "Ebena"
+                "shopName": "Eneba"
             },
             {
-                "title": "Fabled Lands Demo",
-                "price": "0.00",
-                "discount": "0",
-                "pictureLink": "https://media.kasperskydaily.com/wp-content/uploads/sites/92/2020/02/17105257/game-ratings-featured.jpg",
-                "linkToShop": "https://www.gog.com/en/game/fabled_lands_demo",
+                "title": "Raji: An Ancient Epic Steam Key GLOBAL",
+                "price": "0.89 €",
+                "discount": "",
+                "pictureLink": "https://cdn-products.eneba.com/resized-products/DxbjOeeXywVBwv4TvR6UpDfwzDz9kEdowlJxP4QW8pU_350x200_1x-0.jpeg",
+                "linkToShop": "https://www.eneba.com/latam/steam-raji-an-ancient-epic-steam-key-global",
+                "shopName": "Eneba"
+            },
+            {
+                "title": "Earth's Dawn Steam Key GLOBAL",
+                "price": "0.96 €",
+                "discount": "",
+                "pictureLink": "https://cdn-products.eneba.com/resized-products/RZ79W9vwpZ_GOfRLxz5pqitcazgMgwlWPgRt9KoVrL4_350x200_1x-0.jpg",
+                "linkToShop": "https://www.eneba.com/latam/steam-earths-dawn-steam-key-global",
+                "shopName": "Eneba"
+            },
+            {
+                "title": "X-COM: Complete Pack (PC) Steam Key GLOBAL",
+                "price": "0.28 €",
+                "discount": "",
+                "pictureLink": "https://cdn-products.eneba.com/resized-products/W3Dltbe_350x200_1x-0.jpg",
+                "linkToShop": "https://www.eneba.com/latam/steam-x-com-complete-pack-pc-steam-key-global",
+                "shopName": "Eneba"
+            },
+            {
+                "title": "Street Football Steam Key GLOBAL",
+                "price": "0.72 €",
+                "discount": "",
+                "pictureLink": "https://cdn-products.eneba.com/resized-products/yI0jC9r3kGXeq5J111F4Lal7vbskMW7snSG1YJ_OBPM_350x200_1x-0.jpeg",
+                "linkToShop": "https://www.eneba.com/latam/steam-street-football-steam-key-global",
+                "shopName": "Eneba"
+            },
+            {
+                "title": "Corridor Z (PC) Steam Key GLOBAL",
+                "price": "0.40 €",
+                "discount": "",
+                "pictureLink": "https://cdn-products.eneba.com/resized-products/45M2mg8gqS9Or0MN4DJA5vcaaRE5j45eCkV7sBrnw3M_350x200_1x-0.png",
+                "linkToShop": "https://www.eneba.com/latam/steam-corridor-z-pc-steam-key-global",
+                "shopName": "Eneba"
+            },
+            {
+                "title": "White Day VR: The Courage Test [VR] (PC) Steam Key GLOBAL",
+                "price": "0.31 €",
+                "discount": "",
+                "pictureLink": "https://cdn-products.eneba.com/resized-products/wCYS3u9_hv1DzdIl5gg2XJcTN71R-F8miFZQfyNV2YY_350x200_1x-0.jpeg",
+                "linkToShop": "https://www.eneba.com/latam/steam-white-day-vr-the-courage-test-vr-pc-steam-key-global",
+                "shopName": "Eneba"
+            },
+            {
+                "title": "LEGO: Batman 2 - DC Super Heroes Steam Key GLOBAL",
+                "price": "0.95 €",
+                "discount": "",
+                "pictureLink": "https://cdn-products.eneba.com/resized-products/5WFo3QeDVAV1Tvgt-0EMoEhlQkDe5elKlWFspehsKTI_350x200_1x-0.jpeg",
+                "linkToShop": "https://www.eneba.com/latam/steam-lego-batman-2-dc-super-heroes-steam-key-global",
+                "shopName": "Eneba"
+            },
+            {
+                "title": "Dragon Fist: VR Kung Fu [VR] (PC) Steam Key GLOBAL",
+                "price": "0.38 €",
+                "discount": "",
+                "pictureLink": "https://cdn-products.eneba.com/resized-products/CQOCMlxqLPdVdvpth_EBm4P0JEkuInNfUDtW-EGNhwc_350x200_1x-0.jpg",
+                "linkToShop": "https://www.eneba.com/latam/steam-dragon-fist-vr-kung-fu-vr-pc-steam-key-global",
+                "shopName": "Eneba"
+            },
+            {
+                "title": "Trapped Dead Steam Key GLOBAL",
+                "price": "0.74 €",
+                "discount": "",
+                "pictureLink": "https://cdn-products.eneba.com/resized-products/r8oO4SzMxWbi8uKUMeTzzNS8oTG0SX_vVUbj-brbTh0_350x200_1x-0.jpeg",
+                "linkToShop": "https://www.eneba.com/latam/steam-trapped-dead-steam-key-global",
+                "shopName": "Eneba"
+            },
+            {
+                "title": "Leisure Suit Larry 5 - Passionate Patti Does a Little Undercover Work Steam Key GLOBAL",
+                "price": "0.40 €",
+                "discount": "",
+                "pictureLink": "https://cdn-products.eneba.com/resized-products/8vKIssgdI1sQwsb62xV_a_twAQiqgODB40jQQR2_Epg_350x200_1x-0.jpeg",
+                "linkToShop": "https://www.eneba.com/latam/steam-leisure-suit-larry-5-passionate-patti-does-a-little-undercover-work-steam-key-global",
+                "shopName": "Eneba"
+            },
+            {
+                "title": "Cook-Out [VR] (PC) Steam Key GLOBAL",
+                "price": "0.92 €",
+                "discount": "",
+                "pictureLink": "https://cdn-products.eneba.com/resized-products/7hVBcqsz5dNF7lhDE1xhi9UkQ_udE1Y6LuClgr85Lvc_350x200_1x-0.jpeg",
+                "linkToShop": "https://www.eneba.com/latam/steam-cook-out-vr-pc-steam-key-global",
+                "shopName": "Eneba"
+            },
+            {
+                "title": "Distraint 2 Steam Key GLOBAL",
+                "price": "0.78 €",
+                "discount": "",
+                "pictureLink": "https://cdn-products.eneba.com/resized-products/p-V0mhd0F22OiiVk1WZVnzYS5VzjKvVgxzpLMBu_VKU_350x200_1x-0.jpeg",
+                "linkToShop": "https://www.eneba.com/latam/steam-distraint-2-steam-key-global",
+                "shopName": "Eneba"
+            },
+            {
+                "title": "Omno Steam Key GLOBAL",
+                "price": "0.80 €",
+                "discount": "",
+                "pictureLink": "https://cdn-products.eneba.com/resized-products/N2jRIUAOmxMjqS2_FFxXeCdicRmLeoWZAC-aHB_POW8_350x200_1x-0.jpeg",
+                "linkToShop": "https://www.eneba.com/latam/steam-omno-steam-key-global",
+                "shopName": "Eneba"
+            },
+            {
+                "title": "Sid Meier's Starships Steam Key GLOBAL",
+                "price": "0.27 €",
+                "discount": "",
+                "pictureLink": "https://cdn-products.eneba.com/resized-products/KqF9OxB_350x200_1x-0.jpg",
+                "linkToShop": "https://www.eneba.com/latam/steam-sid-meiers-starships-steam-key-global",
+                "shopName": "Eneba"
+            },
+            {
+                "title": "Milky Quest II UNRATED",
+                "price": "Free to Play",
+                "discount": "0%",
+                "pictureLink": "https://images.gog-statics.com/6fe7d86dbcade8f5f81ceff940745fa777c438dfc98eb00fa1b24cfeccc35b34_product_tile_extended_432x243.webp",
+                "linkToShop": "https://www.gog.com/en/game/milky_quest_ii_unrated",
                 "shopName": "Gog"
             },
             {
-                "title": "Diluvian Winds: Prologue",
-                "price": "0.00",
-                "discount": "0",
+                "title": "Exodus SDK",
+                "price": "Free to Play",
+                "discount": "0%",
+                "pictureLink": "https://images.gog-statics.com/b5ca76120864b173c1a5cf7b2c01d331e4856051e07ae9a86bfd03b9ffde4ff8_product_tile_extended_432x243.webp",
+                "linkToShop": "https://www.gog.com/en/game/metro_exodus_sdk",
+                "shopName": "Gog"
+            },
+            {
+                "title": "SteamWorld Build DEMO",
+                "price": "Free to Play",
+                "discount": "0%",
+                "pictureLink": "https://images.gog-statics.com/e428ce18f3048c32650fab6c794fe3ab2bd769d6a9505bf600d44752e33c1c08_product_tile_extended_432x243.webp",
+                "linkToShop": "https://www.gog.com/en/game/steamworld_build_demo",
+                "shopName": "Gog"
+            },
+            {
+                "title": "Demon Queen Melissa UNRATED",
+                "price": "Free to Play",
+                "discount": "0%",
+                "pictureLink": "https://images.gog-statics.com/1c275497985af52c75b86ff62c5a570d74e715d24396a0e55d04c090682fc652_product_tile_extended_432x243.webp",
+                "linkToShop": "https://www.gog.com/en/game/demon_queen_melissa_unrated",
+                "shopName": "Gog"
+            },
+            {
+                "title": "Way of the Hunter - Free UTV DLC",
+                "price": "Free to Play",
+                "discount": "0%",
+                "pictureLink": "https://images.gog-statics.com/82fae0323f0798d17e66ae06b8fb5d92ed5654d50fb27e152f4438801eb4575b_product_tile_extended_432x243.webp",
+                "linkToShop": "https://www.gog.com/en/game/way_of_the_hunter_free_utv_dlc",
+                "shopName": "Gog"
+            },
+            {
+                "title": "Demons Roots UNRATED",
+                "price": "Free to Play",
+                "discount": "0%",
+                "pictureLink": "https://images.gog-statics.com/c5f76ccc229f287aff1016cec5ed21038aa38298208dd6cfe18736168f36c79f_product_tile_extended_432x243.webp",
+                "linkToShop": "https://www.gog.com/en/game/demons_roots_unrated",
+                "shopName": "Gog"
+            },
+            {
+                "title": "Space Tail: Homecoming",
+                "price": "Free to Play",
+                "discount": "0%",
+                "pictureLink": "https://images.gog-statics.com/3a9e3cc03bfa4cab54be36927b879b9f76a6e81cc9d78690b746ad3c0eac62b8_product_tile_extended_432x243.webp",
+                "linkToShop": "https://www.gog.com/en/game/space_tail_homecoming",
+                "shopName": "Gog"
+            },
+            {
+                "title": "Ariel's Daily Grind UNRATED",
+                "price": "Free to Play",
+                "discount": "0%",
+                "pictureLink": "https://images.gog-statics.com/4a540b517b384bf056ac88659ea395acb5dac3209aab540a73a93a56d79edf82_product_tile_extended_432x243.webp",
+                "linkToShop": "https://www.gog.com/en/game/ariels_daily_grind_unrated",
+                "shopName": "Gog"
+            },
+            {
+                "title": "The Feast",
+                "price": "Free to Play",
+                "discount": "0%",
+                "pictureLink": "https://images.gog-statics.com/b188993796d92e5fc2cf3e3efa95a31bb5bbfa8964d4e63579a91ab184c250e4_product_tile_extended_432x243.webp",
+                "linkToShop": "https://www.gog.com/en/game/the_feast",
+                "shopName": "Gog"
+            },
+            {
+                "title": "Chromosome Evil - Cheat Trainer",
+                "price": "Free to Play",
+                "discount": "0%",
+                "pictureLink": "https://images.gog-statics.com/377d48c2dd101abc60e7781a22ab7bc535f5084c69eef38fe561f44fa2cec5c3_product_tile_extended_432x243.webp",
+                "linkToShop": "https://www.gog.com/en/game/chromosome_evil_cheat_trainer",
+                "shopName": "Gog"
+            },
+            {
+                "title": "Heavenly Heroes of Antidomi UNRATED",
+                "price": "Free to Play",
+                "discount": "0%",
+                "pictureLink": "https://images.gog-statics.com/6bdba080e0d01f61b80627a918ed43e7a3c9d9a2998a9d4524fd1f290e3ef1da_product_tile_extended_432x243.webp",
+                "linkToShop": "https://www.gog.com/en/game/heavenly_heroes_of_antidomi_unrated",
+                "shopName": "Gog"
+            },
+            {
+                "title": "Into the Nightmare UNRATED",
+                "price": "Free to Play",
+                "discount": "0%",
+                "pictureLink": "https://images.gog-statics.com/0f0d9753d12934f79e8300c2170be9c245591e33e71fb51543bb962962a6b8e9_product_tile_extended_432x243.webp",
+                "linkToShop": "https://www.gog.com/en/game/into_the_nightmare_unrated",
+                "shopName": "Gog"
+            },
+            {
+                "title": "R-Type Final 2: New Pilot Support Pack",
+                "price": "Free to Play",
+                "discount": "0%",
                 "pictureLink": "https://media.kasperskydaily.com/wp-content/uploads/sites/92/2020/02/17105257/game-ratings-featured.jpg",
-                "linkToShop": "https://www.gog.com/en/game/diluvian_winds_prologue",
+                "linkToShop": "https://www.gog.com/en/game/rtype_final_2_new_pilot_support_pack",
+                "shopName": "Gog"
+            },
+            {
+                "title": "Gore Screaming Show unrated patch",
+                "price": "Free to Play",
+                "discount": "0%",
+                "pictureLink": "https://media.kasperskydaily.com/wp-content/uploads/sites/92/2020/02/17105257/game-ratings-featured.jpg",
+                "linkToShop": "https://www.gog.com/en/game/gore_screaming_show_unrated_patch",
+                "shopName": "Gog"
+            },
+            {
+                "title": "Tunguska The Visitation - Ghost of Valentin",
+                "price": "Free to Play",
+                "discount": "0%",
+                "pictureLink": "https://media.kasperskydaily.com/wp-content/uploads/sites/92/2020/02/17105257/game-ratings-featured.jpg",
+                "linkToShop": "https://www.gog.com/en/game/tunguska_the_visitation_ghost_of_valentin",
+                "shopName": "Gog"
+            },
+            {
+                "title": "It's a Wrap Demo",
+                "price": "Free to Play",
+                "discount": "0%",
+                "pictureLink": "https://media.kasperskydaily.com/wp-content/uploads/sites/92/2020/02/17105257/game-ratings-featured.jpg",
+                "linkToShop": "https://www.gog.com/en/game/its_a_wrap_demo",
+                "shopName": "Gog"
+            },
+            {
+                "title": "Clash II Soundtrack",
+                "price": "Free to Play",
+                "discount": "0%",
+                "pictureLink": "https://media.kasperskydaily.com/wp-content/uploads/sites/92/2020/02/17105257/game-ratings-featured.jpg",
+                "linkToShop": "https://www.gog.com/en/game/clash_ii_soundtrack",
+                "shopName": "Gog"
+            },
+            {
+                "title": "The Scarlet Demonslayer UNRATED",
+                "price": "Free to Play",
+                "discount": "0%",
+                "pictureLink": "https://media.kasperskydaily.com/wp-content/uploads/sites/92/2020/02/17105257/game-ratings-featured.jpg",
+                "linkToShop": "https://www.gog.com/en/game/the_scarlet_demonslayer_unrated",
+                "shopName": "Gog"
+            },
+            {
+                "title": "Sandwalkers: The Fourteenth Caravan",
+                "price": "Free to Play",
+                "discount": "0%",
+                "pictureLink": "https://media.kasperskydaily.com/wp-content/uploads/sites/92/2020/02/17105257/game-ratings-featured.jpg",
+                "linkToShop": "https://www.gog.com/en/game/sandwalkers_the_fourteenth_caravan",
+                "shopName": "Gog"
+            },
+            {
+                "title": "NecroBouncer: Prologue",
+                "price": "Free to Play",
+                "discount": "0%",
+                "pictureLink": "https://media.kasperskydaily.com/wp-content/uploads/sites/92/2020/02/17105257/game-ratings-featured.jpg",
+                "linkToShop": "https://www.gog.com/en/game/necrobouncer_prologue",
+                "shopName": "Gog"
+            },
+            {
+                "title": "LEGO® Bricktales DEMO",
+                "price": "Free to Play",
+                "discount": "0%",
+                "pictureLink": "https://media.kasperskydaily.com/wp-content/uploads/sites/92/2020/02/17105257/game-ratings-featured.jpg",
+                "linkToShop": "https://www.gog.com/en/game/lego_bricktales_demo",
                 "shopName": "Gog"
             },
             {
                 "title": "CHAOS;HEAD NOAH - Costume DLC",
-                "price": "0.00",
-                "discount": "0",
+                "price": "Free to Play",
+                "discount": "0%",
                 "pictureLink": "https://media.kasperskydaily.com/wp-content/uploads/sites/92/2020/02/17105257/game-ratings-featured.jpg",
                 "linkToShop": "https://www.gog.com/en/game/chaos_head_noah_costume_dlc",
                 "shopName": "Gog"
             },
             {
-                "title": "The Evil Within 2 (PC) Gog.com  Key GLOBAL",
-                "price": "0.37",
-                "discount": "\"\"",
-                "pictureLink": "https://cdn-products.eneba.com/resized-products/z9ooqscxnvftgbpktcgt_350x200_1x-0.jpg",
-                "linkToShop": "https://www.eneba.com/latam/gog-the-evil-within-2-pc-gog-com-key-global",
-                "shopName": "Ebena"
+                "title": "Gamedec - Definitive Edition - Free Characters Bundle",
+                "price": "Free to Play",
+                "discount": "0%",
+                "pictureLink": "https://media.kasperskydaily.com/wp-content/uploads/sites/92/2020/02/17105257/game-ratings-featured.jpg",
+                "linkToShop": "https://www.gog.com/en/game/gamedec_definitive_edition_free_characters_bundle",
+                "shopName": "Gog"
             },
             {
-                "title": "Chernobylite Short Story: The Arrival",
-                "price": "0.00",
-                "discount": "0",
+                "title": "Tower of Ardia UNRATED",
+                "price": "Free to Play",
+                "discount": "0%",
                 "pictureLink": "https://media.kasperskydaily.com/wp-content/uploads/sites/92/2020/02/17105257/game-ratings-featured.jpg",
-                "linkToShop": "https://www.gog.com/en/game/chernobylite_short_story_the_arrival",
+                "linkToShop": "https://www.gog.com/en/game/tower_of_ardia_unrated",
+                "shopName": "Gog"
+            },
+            {
+                "title": "Chasm: The Rift Demo",
+                "price": "Free to Play",
+                "discount": "0%",
+                "pictureLink": "https://media.kasperskydaily.com/wp-content/uploads/sites/92/2020/02/17105257/game-ratings-featured.jpg",
+                "linkToShop": "https://www.gog.com/en/game/chasmtherift_demo",
+                "shopName": "Gog"
+            },
+            {
+                "title": "Potion Permit - Poster (F)",
+                "price": "Free to Play",
+                "discount": "0%",
+                "pictureLink": "https://media.kasperskydaily.com/wp-content/uploads/sites/92/2020/02/17105257/game-ratings-featured.jpg",
+                "linkToShop": "https://www.gog.com/en/game/potion_permit_poster_f",
+                "shopName": "Gog"
+            },
+            {
+                "title": "Potion Permit - Poster (M)",
+                "price": "Free to Play",
+                "discount": "0%",
+                "pictureLink": "https://media.kasperskydaily.com/wp-content/uploads/sites/92/2020/02/17105257/game-ratings-featured.jpg",
+                "linkToShop": "https://www.gog.com/en/game/potion_permit_poster_m",
+                "shopName": "Gog"
+            },
+            {
+                "title": "Vagrus - The Riven Realms: Seekers of Knowledge",
+                "price": "Free to Play",
+                "discount": "0%",
+                "pictureLink": "https://media.kasperskydaily.com/wp-content/uploads/sites/92/2020/02/17105257/game-ratings-featured.jpg",
+                "linkToShop": "https://www.gog.com/en/game/vagrus_the_riven_realms_seekers_of_knowledge",
+                "shopName": "Gog"
+            },
+            {
+                "title": "Diluvian Winds: Prologue",
+                "price": "Free to Play",
+                "discount": "0%",
+                "pictureLink": "https://media.kasperskydaily.com/wp-content/uploads/sites/92/2020/02/17105257/game-ratings-featured.jpg",
+                "linkToShop": "https://www.gog.com/en/game/diluvian_winds_prologue",
+                "shopName": "Gog"
+            },
+            {
+                "title": "Prison Architect - Free For Life",
+                "price": "Free to Play",
+                "discount": "0%",
+                "pictureLink": "https://media.kasperskydaily.com/wp-content/uploads/sites/92/2020/02/17105257/game-ratings-featured.jpg",
+                "linkToShop": "https://www.gog.com/en/game/prison_architect_free_for_life",
                 "shopName": "Gog"
             },
             {
                 "title": "The Imperial Gatekeeper UNRATED",
-                "price": "0.00",
-                "discount": "0",
+                "price": "Free to Play",
+                "discount": "0%",
                 "pictureLink": "https://media.kasperskydaily.com/wp-content/uploads/sites/92/2020/02/17105257/game-ratings-featured.jpg",
                 "linkToShop": "https://www.gog.com/en/game/the_imperial_gatekeeper_unrated",
                 "shopName": "Gog"
             },
             {
                 "title": "Flashout 3D: Enhanced Edition",
-                "price": "0.00",
-                "discount": "0",
+                "price": "Free to Play",
+                "discount": "0%",
                 "pictureLink": "https://media.kasperskydaily.com/wp-content/uploads/sites/92/2020/02/17105257/game-ratings-featured.jpg",
                 "linkToShop": "https://www.gog.com/en/game/flashout_3d_enhanced_edition",
                 "shopName": "Gog"
             },
             {
+                "title": "Fall of Porcupine: Prologue",
+                "price": "Free to Play",
+                "discount": "0%",
+                "pictureLink": "https://media.kasperskydaily.com/wp-content/uploads/sites/92/2020/02/17105257/game-ratings-featured.jpg",
+                "linkToShop": "https://www.gog.com/en/game/fall_of_porcupine_prologue",
+                "shopName": "Gog"
+            },
+            {
+                "title": "Noelle Does Her Best! UNRATED",
+                "price": "Free to Play",
+                "discount": "0%",
+                "pictureLink": "https://media.kasperskydaily.com/wp-content/uploads/sites/92/2020/02/17105257/game-ratings-featured.jpg",
+                "linkToShop": "https://www.gog.com/en/game/noelle_does_her_best_unrated",
+                "shopName": "Gog"
+            },
+            {
+                "title": "Illuminaria Demo",
+                "price": "Free to Play",
+                "discount": "0%",
+                "pictureLink": "https://media.kasperskydaily.com/wp-content/uploads/sites/92/2020/02/17105257/game-ratings-featured.jpg",
+                "linkToShop": "https://www.gog.com/en/game/illuminaria_demo",
+                "shopName": "Gog"
+            },
+            {
+                "title": "Apostle: Rebellion UNRATED",
+                "price": "Free to Play",
+                "discount": "0%",
+                "pictureLink": "https://media.kasperskydaily.com/wp-content/uploads/sites/92/2020/02/17105257/game-ratings-featured.jpg",
+                "linkToShop": "https://www.gog.com/en/game/apostle_rebellion_unrated",
+                "shopName": "Gog"
+            },
+            {
+                "title": "Chernobylite Short Story: The Arrival",
+                "price": "Free to Play",
+                "discount": "0%",
+                "pictureLink": "https://media.kasperskydaily.com/wp-content/uploads/sites/92/2020/02/17105257/game-ratings-featured.jpg",
+                "linkToShop": "https://www.gog.com/en/game/chernobylite_short_story_the_arrival",
+                "shopName": "Gog"
+            },
+            {
+                "title": "Castaway of the Ardusta Sea UNRATED",
+                "price": "Free to Play",
+                "discount": "0%",
+                "pictureLink": "https://media.kasperskydaily.com/wp-content/uploads/sites/92/2020/02/17105257/game-ratings-featured.jpg",
+                "linkToShop": "https://www.gog.com/en/game/castaway_of_the_ardusta_sea_unrated",
+                "shopName": "Gog"
+            },
+            {
+                "title": "Serafina and the Key to the Egg UNRATED",
+                "price": "Free to Play",
+                "discount": "0%",
+                "pictureLink": "https://media.kasperskydaily.com/wp-content/uploads/sites/92/2020/02/17105257/game-ratings-featured.jpg",
+                "linkToShop": "https://www.gog.com/en/game/serafina_and_the_key_to_the_egg_unrated",
+                "shopName": "Gog"
+            },
+            {
+                "title": "Warlock character for B.I.O.T.A.",
+                "price": "Free to Play",
+                "discount": "0%",
+                "pictureLink": "https://media.kasperskydaily.com/wp-content/uploads/sites/92/2020/02/17105257/game-ratings-featured.jpg",
+                "linkToShop": "https://www.gog.com/en/game/warlock_character_for_biota",
+                "shopName": "Gog"
+            },
+            {
+                "title": "Demon Sword: Incubus UNRATED",
+                "price": "Free to Play",
+                "discount": "0%",
+                "pictureLink": "https://media.kasperskydaily.com/wp-content/uploads/sites/92/2020/02/17105257/game-ratings-featured.jpg",
+                "linkToShop": "https://www.gog.com/en/game/demon_sword_incubus_unrated",
+                "shopName": "Gog"
+            },
+            {
+                "title": "The Triumphant Return of Diabolos UNRATED",
+                "price": "Free to Play",
+                "discount": "0%",
+                "pictureLink": "https://media.kasperskydaily.com/wp-content/uploads/sites/92/2020/02/17105257/game-ratings-featured.jpg",
+                "linkToShop": "https://www.gog.com/en/game/the_triumphant_return_of_diabolos_unrated",
+                "shopName": "Gog"
+            },
+            {
+                "title": "Necromunda: Hired Gun - Spire Noble Skin Pack",
+                "price": "Free to Play",
+                "discount": "0%",
+                "pictureLink": "https://media.kasperskydaily.com/wp-content/uploads/sites/92/2020/02/17105257/game-ratings-featured.jpg",
+                "linkToShop": "https://www.gog.com/en/game/necromunda_hired_gun_spire_noble_skin_pack",
+                "shopName": "Gog"
+            },
+            {
+                "title": "Destroy All Humans! Clone Carnage",
+                "price": "Free to Play",
+                "discount": "0%",
+                "pictureLink": "https://media.kasperskydaily.com/wp-content/uploads/sites/92/2020/02/17105257/game-ratings-featured.jpg",
+                "linkToShop": "https://www.gog.com/en/game/destroy_all_humans_clone_carnage",
+                "shopName": "Gog"
+            },
+            {
+                "title": "Knights of Messiah UNRATED",
+                "price": "Free to Play",
+                "discount": "0%",
+                "pictureLink": "https://media.kasperskydaily.com/wp-content/uploads/sites/92/2020/02/17105257/game-ratings-featured.jpg",
+                "linkToShop": "https://www.gog.com/en/game/knights_of_messiah_unrated",
+                "shopName": "Gog"
+            },
+            {
                 "title": "Kao the Kangaroo - Summer Drip",
-                "price": "0.00",
-                "discount": "0",
+                "price": "Free to Play",
+                "discount": "0%",
                 "pictureLink": "https://media.kasperskydaily.com/wp-content/uploads/sites/92/2020/02/17105257/game-ratings-featured.jpg",
                 "linkToShop": "https://www.gog.com/en/game/kao_the_kangaroo_summer_drip",
                 "shopName": "Gog"
             },
             {
-                "title": "Raji: An Ancient Epic Steam Key GLOBAL",
-                "price": "0.79",
-                "discount": "\"\"",
-                "pictureLink": "https://cdn-products.eneba.com/resized-products/DxbjOeeXywVBwv4TvR6UpDfwzDz9kEdowlJxP4QW8pU_350x200_1x-0.jpeg",
-                "linkToShop": "https://www.eneba.com/latam/steam-raji-an-ancient-epic-steam-key-global",
-                "shopName": "Ebena"
-            },
-            {
-                "title": "It's a Wrap Demo",
-                "price": "0.00",
-                "discount": "0",
-                "pictureLink": "https://images.gog-statics.com/8eae02ec38a19dc39e5e395697a97ef3a898a2b921c6f616b24acabc7d0b6b09_product_tile_extended_432x243.webp",
-                "linkToShop": "https://www.gog.com/en/game/its_a_wrap_demo",
+                "title": "Kao the Kangaroo - Top of the Class",
+                "price": "Free to Play",
+                "discount": "0%",
+                "pictureLink": "https://media.kasperskydaily.com/wp-content/uploads/sites/92/2020/02/17105257/game-ratings-featured.jpg",
+                "linkToShop": "https://www.gog.com/en/game/kao_the_kangaroo_top_of_the_class",
                 "shopName": "Gog"
             },
             {
-                "title": "Nyasha (PC) Steam Key GLOBAL",
-                "price": "0.49",
-                "discount": "\"\"",
-                "pictureLink": "https://cdn-products.eneba.com/resized-products/Xizsm1WUfFgOwyGeVeLJYRnxRJT5Gte3r1hRjj4-I5E_350x200_1x-0.jpg",
-                "linkToShop": "https://www.eneba.com/latam/steam-nyasha-pc-steam-key-global",
-                "shopName": "Ebena"
-            },
-            {
-                "title": "X-COM: Complete Pack (PC) Steam Key GLOBAL",
-                "price": "0.28",
-                "discount": "\"\"",
-                "pictureLink": "https://cdn-products.eneba.com/resized-products/W3Dltbe_350x200_1x-0.jpg",
-                "linkToShop": "https://www.eneba.com/latam/steam-x-com-complete-pack-pc-steam-key-global",
-                "shopName": "Ebena"
-            },
-            {
-                "title": "Prison Architect - Free For Life",
-                "price": "0.00",
-                "discount": "0",
+                "title": "Kao the Kangaroo - VIP",
+                "price": "Free to Play",
+                "discount": "0%",
                 "pictureLink": "https://media.kasperskydaily.com/wp-content/uploads/sites/92/2020/02/17105257/game-ratings-featured.jpg",
-                "linkToShop": "https://www.gog.com/en/game/prison_architect_free_for_life",
+                "linkToShop": "https://www.gog.com/en/game/kao_the_kangaroo_vip",
                 "shopName": "Gog"
             }
         ]
@@ -192,7 +616,7 @@
                 "shopName": "Steam"
             },
             {
-                "title": "EA SPORTS\u2122 FIFA 23",
+                "title": "EA SPORTS™ FIFA 23",
                 "price": "69.99",
                 "discount": "27.99",
                 "pictureLink": "https://cdn.akamai.steamstatic.com/steam/apps/1811260/capsule_sm_120.jpg?t=1672758344",
@@ -200,7 +624,7 @@
                 "shopName": "Steam"
             },
             {
-                "title": "Tom Clancy's Rainbow Six\u00ae Siege",
+                "title": "Tom Clancy's Rainbow Six® Siege",
                 "price": "19.99",
                 "discount": "0",
                 "pictureLink": "https://cdn.akamai.steamstatic.com/steam/apps/359550/capsule_sm_120.jpg?t=1674233642",
@@ -216,7 +640,7 @@
                 "shopName": "Steam"
             },
             {
-                "title": "Battlefield\u2122 V",
+                "title": "Battlefield™ V",
                 "price": "49.99",
                 "discount": "4.99",
                 "pictureLink": "https://cdn.akamai.steamstatic.com/steam/apps/1238810/capsule_sm_120.jpg?t=1664070673",
@@ -248,7 +672,7 @@
                 "shopName": "Steam"
             },
             {
-                "title": "Call of Duty\u00ae: Modern Warfare\u00ae II",
+                "title": "Call of Duty®: Modern Warfare® II",
                 "price": "69.99",
                 "discount": "0",
                 "pictureLink": "https://cdn.akamai.steamstatic.com/steam/apps/1938090/capsule_sm_120.jpg?t=1671472823",
