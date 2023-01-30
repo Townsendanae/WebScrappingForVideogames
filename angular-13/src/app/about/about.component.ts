@@ -5,7 +5,10 @@ import { Router } from '@angular/router';
   templateUrl: './about.component.html'
 })
 export class AboutComponent {
-
+  buscar(nombre: string) {
+    console.log(nombre);
+    location.href = "./component/badges?input=" + nombre;
+  }
   constructor(private router: Router) {
     
   }
