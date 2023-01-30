@@ -66,13 +66,13 @@ export class NgbdAlertBasicComponent implements OnInit {
   ngOnInit(): void {
     let datosArray;
 
-    fetch('http://localhost:3000/totalJuegosEconomicos.json')
+    fetch('http://localhost:3000/totalJuegos')
     .then(response => response.json())
     .then(data => {
         datosArray = data['result'];
 
         for (let juego of datosArray) {
-          if (juego.shopName == "Ebena") {
+          if (juego.shopName == "Eneba") {
             this.enebaShop.push(juego);
           }
           if (juego.shopName == "Gog") {
@@ -87,30 +87,5 @@ export class NgbdAlertBasicComponent implements OnInit {
 
     })
     .catch(error => console.error(error));
-
-    fetch('http://localhost:3000/totalJuegosTopSellers.json')
-    .then(response => response.json())
-    .then(data => {
-        datosArray = data['result'];
-
-        for (let juego of datosArray) {
-          if (juego.shopName == "Ebena") {
-            this.enebaShop.push(juego);
-          }
-          if (juego.shopName == "Gog") {
-            this.gogShop.push(juego);
-          }
-          if (juego.shopName == "Steam") {
-            this.steamShop.push(juego);
-          }
-        }
-        
-        this.blogcards += datosArray;
-    })
-    .catch(error => console.error(error));
-    
-
-    
-
   }
 }
