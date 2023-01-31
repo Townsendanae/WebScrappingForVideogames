@@ -157,7 +157,7 @@ export class NgbdAlertBasicComponent implements OnInit {
 
   ngOnInit(): void {
 
-    document.getElementById('reload')?.addEventListener('click', _ => { // el _ es para indicar la ausencia de parametros
+    document.getElementById('reload')?.addEventListener('click', _ => { 
       location.reload();
     });
 

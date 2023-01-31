@@ -1,6 +1,6 @@
 import { ActivatedRoute } from '@angular/router';
 import { HttpClient } from '@angular/common/http';
-import { Component } from "@angular/core";
+import { Component, OnInit } from "@angular/core";
 import { blogcard, blogcards } from "./blog-cards-data";
 
 @Component({
@@ -11,7 +11,13 @@ export class BadgeComponent {
 
   blogcards: blogcard[];
 
+  timeLeft: number = 5;
+  interval: any;
+  recargar = false;
+
   constructor(private route: ActivatedRoute, private http: HttpClient) {
+
+
 
     this.blogcards = blogcards;
     this.route.queryParams.subscribe(params => {
@@ -46,10 +52,10 @@ export class BadgeComponent {
                   <div class="card">
                     <img src="${this.blogcards[i].pictureLink}" alt="blogs" class="card-img-top" width="300" height="150" />
                     <div class="card-body" id="informationCard">
-                    <h4 class="card-title">${ this.blogcards[i].title }</h4>
-                    <h6 class="card-subtitle">Tienda: ${ this.blogcards[i].shopName }</h6>
-                    <h6 class="card-subtitle">Precio: ${ this.blogcards[i].price }</h6>
-                    <a href="${ this.blogcards[i].linkToShop }">
+                    <h4 class="card-title">${this.blogcards[i].title}</h4>
+                    <h6 class="card-subtitle">Tienda: ${this.blogcards[i].shopName}</h6>
+                    <h6 class="card-subtitle">Precio: ${this.blogcards[i].price}</h6>
+                    <a href="${this.blogcards[i].linkToShop}">
                       <button type="button" class="btn btn-primary">Ir al sitio</button>
                     </a>
                     </div>
