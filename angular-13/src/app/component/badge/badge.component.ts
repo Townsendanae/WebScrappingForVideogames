@@ -34,8 +34,9 @@ export class BadgeComponent {
         .then(data => {
           let arrayTemp;
           arrayTemp = data['result']
+          console.log(input)
           this.blogcards = arrayTemp.filter((item: any) => item.title.toLowerCase().includes(input.toLowerCase()))
-
+          console.log(blogcards)
 
           let html = "";
           for (let i = 0; i < this.blogcards.length; i++) {

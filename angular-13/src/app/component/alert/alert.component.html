@@ -8,11 +8,7 @@
         <h4 class="card-title mb-0">Juegos Por Tienda</h4>
         <div class="p-3">
           <div ngbDropdown class="d-inline-block">
-            <button
-              class="btn btn-outline-primary"
-              id="dropdownBasic1"
-              ngbDropdownToggle
-            >
+            <button class="btn btn-outline-primary" id="dropdownBasic1" ngbDropdownToggle>
               Search
             </button>
             <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
@@ -30,6 +26,19 @@
               </button>
             </div>
           </div>
+          <div>
+            <br>
+            <label>Rango Inicial</label>
+            <br>
+            <input type="text" #rangoInicial>
+            <br>
+            <label>Rango Final</label>
+            <br>
+            <input type="text" #rangoFinal>
+            <br><br>
+            <button (click)="rango(rangoInicial.value, rangoFinal.value)">Filtrar</button>
+            <button id="reload">Reset</button>
+          </div>
         </div>
       </div>
       <div class="card-body border-top">
@@ -38,18 +47,9 @@
             <a ngbNavLink>Eneba</a>
             <ng-template ngbNavContent>
               <div class="row">
-                <div
-                  class="col-md-6 col-lg-3"
-                  *ngFor="let blogcard of enebaShop"
-                >
+                <div class="col-md-6 col-lg-3" *ngFor="let blogcard of enebaShop">
                   <div class="card">
-                    <img
-                      [src]="blogcard.pictureLink"
-                      alt="blogs"
-                      class="card-img-top"
-                      width="300"
-                      height="150"
-                    />
+                    <img [src]="blogcard.pictureLink" alt="blogs" class="card-img-top" width="300" height="150" />
                     <div class="card-body">
                       <h4 class="card-title">{{ blogcard.title }}</h4>
                       <h6 class="card-subtitle">
@@ -75,13 +75,7 @@
               <div class="row">
                 <div class="col-md-6 col-lg-3" *ngFor="let blogcard of gogShop">
                   <div class="card">
-                    <img
-                      [src]="blogcard.pictureLink"
-                      alt="blogs"
-                      class="card-img-top"
-                      width="300"
-                      height="150"
-                    />
+                    <img [src]="blogcard.pictureLink" alt="blogs" class="card-img-top" width="300" height="150" />
                     <div class="card-body">
                       <h4 class="card-title">{{ blogcard.title }}</h4>
                       <h6 class="card-subtitle">
@@ -105,18 +99,9 @@
             <a ngbNavLink>Steam</a>
             <ng-template ngbNavContent>
               <div class="row">
-                <div
-                  class="col-md-6 col-lg-3"
-                  *ngFor="let blogcard of steamShop"
-                >
+                <div class="col-md-6 col-lg-3" *ngFor="let blogcard of steamShop">
                   <div class="card">
-                    <img
-                      [src]="blogcard.pictureLink"
-                      alt="blogs"
-                      class="card-img-top"
-                      width="300"
-                      height="150"
-                    />
+                    <img [src]="blogcard.pictureLink" alt="blogs" class="card-img-top" width="300" height="150" />
                     <div class="card-body">
                       <h4 class="card-title">{{ blogcard.title }}</h4>
                       <h6 class="card-subtitle">

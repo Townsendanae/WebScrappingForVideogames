@@ -42,6 +42,19 @@ export class NgbdAlertBasicComponent implements OnInit {
   counter = this.tabs.length + 1;
   activeDynamic = 1;
 
+  
+
+  sortByPriceRange(arr: blogcard[], rangoInicial: string,rangoFinal: string ) {
+    return arr.filter(game => parseFloat(game.price) > parseFloat(rangoInicial) && parseFloat(game.price) <= parseFloat(rangoFinal))
+  }
+
+  rango(rangoInicial: string,rangoFinal: string) {
+    this.enebaShop = this.sortByPriceRange(this.enebaShop,rangoInicial,rangoFinal)
+    this.gogShop = this.sortByPriceRange(this.enebaShop,rangoInicial,rangoFinal)
+    this.steamShop = this.sortByPriceRange(this.enebaShop,rangoInicial,rangoFinal)
+  
+  }
+
   orderByPriceAsc(arr: blogcard[]) {
     arr.sort(function (a, b) {
       if (isNaN(+a.price!) && !isNaN(+b.price!)) {
@@ -134,11 +147,20 @@ export class NgbdAlertBasicComponent implements OnInit {
     event.preventDefault();
   }
 
+  
+
   constructor() {
     this.blogcards = blogcards;
+
+    
   }
 
   ngOnInit(): void {
+
+    document.getElementById('reload')?.addEventListener('click', _ => { // el _ es para indicar la ausencia de parametros
+      location.reload();
+    });
+
     let datosArray;
 
     fetch("http://localhost:3000/totalJuegos")
