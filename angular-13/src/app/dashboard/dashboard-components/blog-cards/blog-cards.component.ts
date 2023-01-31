@@ -5,6 +5,7 @@ import { blogcard, blogcards } from "./blog-cards-data";
   selector: "app-blog-cards",
   templateUrl: "./blog-cards.component.html",
 })
+
 export class BlogCardsComponent implements OnInit {
   blogcards: blogcard[];
 
