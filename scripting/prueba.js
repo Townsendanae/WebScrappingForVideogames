@@ -1,15 +1,4 @@
-const { spawn } = require("child_process");
+const { execSync } = require('child_process');
+const game = "The forest";
 
-const file = 'C:\\Users\\Usuario\\Desktop\\WebScrappingForVideogames\\Scrapping\\EnebaJuegosBusqueda.rb'
-
-const cmd = spawn("ruby", [file,"minecraft"]);
-
-let output = "";
-
-cmd.stdout.on("data", function(data) {
-  output = data;
-});
-
-cmd.on("close", function(code) {
-  console.log(output.toString());
-});
+const rubyExec = execSync(`ruby GeneralBusqueda.rb "${game}"`);
