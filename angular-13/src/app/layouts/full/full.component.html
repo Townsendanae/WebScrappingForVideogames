@@ -28,7 +28,11 @@
           class="nav-toggler waves-effect waves-light d-block d-lg-none"
           href="javascript:void(0)"
         >
-          <i [ngClass]="showMobileMenu ? 'bi bi-text-left fs-6' : 'bi bi-text-left fs-6'"></i>
+          <i
+            [ngClass]="
+              showMobileMenu ? 'bi bi-text-left fs-6' : 'bi bi-text-left fs-6'
+            "
+          ></i>
         </a>
         <!-- ============================================================== -->
         <!-- Logo -->
@@ -50,7 +54,7 @@
             <!-- Light Logo text -->
             <img
               src="assets/images/logos/logo-text.png"
-              class="dark-logo"
+              class="dark-text"
               alt="homepage"
             />
           </span>
@@ -100,7 +104,7 @@
     (mouseover)="Logo()"
     (mouseout)="Logo()"
   >
-  <app-sidebar></app-sidebar>
+    <app-sidebar></app-sidebar>
   </aside>
   <!-- ============================================================== -->
   <!-- End Left Sidebar - style you can find in sidebar.scss  -->

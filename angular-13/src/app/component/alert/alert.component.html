@@ -6,6 +6,31 @@
     <div class="card">
       <div class="p-3">
         <h4 class="card-title mb-0">Juegos Por Tienda</h4>
+        <div class="p-3">
+          <div ngbDropdown class="d-inline-block">
+            <button
+              class="btn btn-outline-primary"
+              id="dropdownBasic1"
+              ngbDropdownToggle
+            >
+              Search
+            </button>
+            <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+              <button ngbDropdownItem (click)="orderPArrayAsc()">
+                Precio: Ascendente
+              </button>
+              <button ngbDropdownItem (click)="orderPArrayDes()">
+                Precio: Descendente
+              </button>
+              <button ngbDropdownItem (click)="orderTArrayAsc()">
+                Nombre: Ascendente
+              </button>
+              <button ngbDropdownItem (click)="orderTArrayDes()">
+                Nombre: Descendente
+              </button>
+            </div>
+          </div>
+        </div>
       </div>
       <div class="card-body border-top">
         <ul ngbNav #nav="ngbNav" [(activeId)]="active" class="nav-tabs">
@@ -80,7 +105,10 @@
             <a ngbNavLink>Steam</a>
             <ng-template ngbNavContent>
               <div class="row">
-                <div class="col-md-6 col-lg-3" *ngFor="let blogcard of steamShop">
+                <div
+                  class="col-md-6 col-lg-3"
+                  *ngFor="let blogcard of steamShop"
+                >
                   <div class="card">
                     <img
                       [src]="blogcard.pictureLink"
